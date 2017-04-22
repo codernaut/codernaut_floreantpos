@@ -1,0 +1,10 @@
+----------------------------------------------------------------
+Sat Apr 22 11:02:59 PKT 2017:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.8.1.2 - (1095077): instance a816c00e-015b-9441-993c-000005ad0b80 
+on database directory C:\Users\gonda\Downloads\floreantpos-code-1695-trunk\database\derby-single\posdb  with class loader sun.misc.Launcher$AppClassLoader@2a139a55 
+Loaded from file:/C:/Users/gonda/.m2/repository/org/apache/derby/derby/10.8.1.2/derby-10.8.1.2.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_121-b13
+user.dir=C:\Users\gonda\Downloads\floreantpos-code-1695-trunk
+derby.system.home=null
+Database Class Loader started - derby.database.classpath=''
