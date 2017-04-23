@@ -641,7 +641,7 @@ public class TicketItem extends BaseTicketItem implements ITicketItem {
 
 		subtotal = getSubtotalAmountWithoutModifiers();
 
-		double discount = getDiscountAmount();
+		double discount = !Ticket.DISCOUNT_ON_TAX?0:getDiscountAmount();
 
 		subtotal = subtotal - discount;
 

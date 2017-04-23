@@ -68,7 +68,7 @@ public class Ticket extends BaseTicket {
 	public static final String PROPERTY_CARD_EXP_MONTH = "card_exp_month"; //$NON-NLS-1$
 	public static final String PROPERTY_ADVANCE_PAYMENT = "advance_payment"; //$NON-NLS-1$
 	public static final String PROPERTY_CARD_AUTH_CODE = "card_auth_code"; //$NON-NLS-1$
-
+	public static final boolean DISCOUNT_ON_TAX = false;
 	private OrderType orderType;
 
 	/* [CONSTRUCTOR MARKER BEGIN] */
@@ -274,9 +274,11 @@ public class Ticket extends BaseTicket {
 		discountAmount += toleranceAmount;
 
 		double taxAmount = calculateTax();
-		if (ticketDiscountAmount > 0) {
-			double discountTax = taxAmount * ticketDiscountAmount / subtotalAmount;
-			taxAmount = taxAmount - discountTax;
+		if(DISCOUNT_ON_TAX) {
+			if (ticketDiscountAmount > 0) {
+				double discountTax = taxAmount * ticketDiscountAmount / subtotalAmount;
+				taxAmount = taxAmount - discountTax;
+			}
 		}
 		setDiscountAmount(discountAmount);
 		setTaxAmount(taxAmount);
