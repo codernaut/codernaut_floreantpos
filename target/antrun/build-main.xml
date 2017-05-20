@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<project name="maven-antrun-" default="main"  >
-<target name="main">
-  <zip basedir="C:\Users\gonda\Downloads\floreantpos-code-1695-trunk\target/floreantpos-bin/floreantpos" destfile="C:\Users\gonda\Downloads\floreantpos-code-1695-trunk\target/floreantpos-1.4-build${buildNumber}.zip"></zip>
-</target>
-</project>
